@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athira Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-6 inset-x-0 z-[10000] pointer-events-auto">
+  <nav
+  class="mx-auto max-w-6xl px-6 py-3
+  rounded-2xl md:rounded-full
+  bg-white/5 backdrop-blur-md border border-white/10">
+
+
+    <div class="flex items-center justify-between">
+
+      <!-- LOGO -->
+      <div class="flex items-center gap-2 font-semibold">
+
+       Athira AS
+      </div>
+
+      <!-- DESKTOP MENU -->
+      <ul class="hidden md:flex gap-8 text-sm text-white/70">
+        <li class="hover:text-white cursor-pointer">Services</li>
+        <li class="hover:text-white cursor-pointer">Projects</li>
+        <li class="hover:text-white cursor-pointer">Testimonials</li>
+        <li class="hover:text-white cursor-pointer">Contact</li>
+      </ul>
+
+      <!-- DESKTOP CTA -->
+      <button
+        class="hidden md:flex items-center gap-2 px-4 py-2 text-sm
+        bg-white/10 hover:bg-white/20 rounded-full border border-white/20">
+        Download CV
+      </button>
+
+      <!-- MOBILE TOGGLE -->
+      <button
+        id="menuBtn"
+        class="md:hidden flex flex-col gap-1.5 p-2 rounded bg-white/10"
+        aria-label="Toggle Menu">
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden mt-4 relative z-[10001]
+      bg-white/10 backdrop-blur-xl border border-white/10
+      rounded-2xl p-6">
+
+      <ul class="flex flex-col gap-4 text-white/80">
+        <li class="hover:text-white cursor-pointer">Services</li>
+        <li class="hover:text-white cursor-pointer">Projects</li>
+        <li class="hover:text-white cursor-pointer">Testimonials</li>
+        <li class="hover:text-white cursor-pointer">Contact</li>
+      </ul>
+
+      <button
+        class="mt-6 w-full px-4 py-3 rounded-full
+        bg-white text-black font-medium">
+        Download CV
+      </button>
+    </div>
+
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-3">
+
+  <!-- Background gradient only -->
+  <div
+    class="absolute inset-0 bg-gradient-to-br
+    from-black via-zinc-900 to-black pointer-events-none">
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-6xl w-full grid md:grid-cols-2 gap-12">
+
+    <!-- LEFT -->
+    <div>
+      <span
+        class="inline-flex items-center gap-2 px-4 py-2 mb-6
+        rounded-full bg-white/10 text-sm border border-white/10">
+        ◉ Graphic Designer
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-light leading-tight">
+        Athira<span class="text-white/60"> Arolickal</span>
+      </h1>
+
+      <p class="mt-6 text-white/60 max-w-md">
+        I’m a versatile designer specializing in graphic, Logo and product
+        design to help grow your business. Let’s build something great!
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <button class="px-6 py-3 rounded-full bg-white text-black font-medium">
+          Contact Now
+        </button>
+
+        <button
+          class="px-6 py-3 rounded-full border border-white/20
+          text-white hover:bg-white/10">
+          See All Projects
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT TESTIMONIALS -->
+    <div class="relative hidden md:block">
+
+      <div
+        class="absolute top-12 right-20 w-56 p-4
+        bg-white/5 backdrop-blur-md border border-white/10
+        rounded-xl rotate-[-6deg]">
+        <p class="text-sm text-white/80">
+          “Working with her was a game changer!”
+        </p>
+        <span class="block mt-2 text-xs text-white/50">
+          — pranavnb
+        </span>
+      </div>
+
+      <div
+        class="absolute bottom-10 right-0 w-56 p-4
+        bg-white/5 backdrop-blur-md border border-white/10
+        rounded-xl rotate-[5deg]">
+        <p class="text-sm text-white/80">
+          “We increased our conversions by 200%”
+        </p>
+        <span class="block mt-2 text-xs text-white/50">
+          — vijaynb
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="relative px-6 sm:px-6 md:px-6 py-24 md:py-32 bg-[#0a0a0a] overflow-hidden">
+
+  <!-- subtle container background (DESKTOP ONLY) -->
+  <div
+  class="absolute inset-y-6 inset-x-4 md:inset-6
+  rounded-[3rem] border-t border-l border-r border-white/10
+  bg-gradient-to-b from-[#111] via-[#111] to-black pointer-events-none">
+</div>
+
+
+
+
+  <div class="relative z-10 max-w-6xl mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-14 md:mb-20">
+      <span
+        class="inline-flex items-center gap-2 px-4 py-2 mb-6
+        rounded-full bg-white/10 border border-white/10 text-sm">
+        ◉ Expert Designer
+      </span>
+
+      <h2 class="text-3xl md:text-5xl font-light">
+        Athira AS<span class="text-white/50">, Your Designer</span>
+      </h2>
+
+      <p class="mt-4 text-white/60 max-w-xl mx-auto">
+        Brief initial presentation of myself and my previous experiences.
+      </p>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-2"> <!-- mobile gap 4, desktop gap 2 -->
+
+      <!-- LEFT PROFILE CARD -->
+      <div
+  class="rounded-2xl md:rounded-3xl
+  bg-[#111] border border-white/10
+  backdrop-blur-md p-6 md:p-8
+  flex flex-col items-center text-center
+  overflow-hidden w-full max-w-lg mx-auto
+  shadow-[0_15px_35px_rgba(0,0,0,0.9)]">
+
+        <!-- PROFILE IMAGE -->
+        <div class="relative w-full h-72 rounded-2xl overflow-hidden mb-4
+                    shadow-[0_10px_25px_rgba(0,0,0,0.8)]">
+          <img
+            src="https://i.pinimg.com/736x/da/2a/a8/da2aa80c231c255aa9556b737b59a6f3.jpg"
+            alt="Designer portrait"
+            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+          />
+          <!-- STATUS INDICATOR -->
+          <span class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-black/50 px-3 py-1 rounded-full text-xs text-white">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            Available for work
+          </span>
+        </div>
+
+        <!-- NAME & ROLE -->
+        <h3 class="text-xl md:text-2xl font-semibold text-white">Hello I am Athira AS</h3>
+        <p class="text-sm md:text-base text-white/60 mt-1">Graphic Designer </p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-4 mt-4 text-white/70">
+          <a href="#" class="hover:text-white"><i class="fab fa-x"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-dribbble"></i></a>
+        </div>
+
+        <!-- CTA BUTTON -->
+        <button class="mt-6 w-full px-4 py-3 rounded-full text-white font-medium
+                     bg-gradient-to-r from-[#111111] via-[#1a1a1a] to-[#222222]
+                     hover:brightness-110 transition">
+          Connect with me
+        </button>
+
+      </div>
+
+      <!-- RIGHT CONTENT CARD -->
+      <div class="rounded-2xl md:rounded-3xl
+        bg-[#111] border border-white/10
+        backdrop-blur-md p-6 md:p-8
+        flex flex-col items-center text-center
+        overflow-hidden w-full max-w-lg mx-auto
+        shadow-[0_10px_25px_rgba(0,0,0,0.8)]">
+
+        <p class="text-white/70 leading-relaxed  text-justify text-sm md:text-base">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+        <!-- SKILLS -->
+        <div class="mt-6 flex flex-wrap gap-2"> <!-- smaller gap -->
+          <span class="px-4 py-2 rounded-full bg-white/10 text-sm border border-white/10">
+            Product Design
+          </span>
+          <span class="px-4 py-2 rounded-full bg-white/10 text-sm border border-white/10">
+            Logo Design
+          </span>
+          <span class="px-4 py-2 rounded-full bg-white/10 text-sm border border-white/10">
+            Brochure
+          </span>
+          <span class="px-4 py-2 rounded-full bg-white/10 text-sm border border-white/10">
+            Flyer
+          </span>
+          <span class="px-4 py-2 rounded-full bg-white/10 text-sm border border-white/10">
+            Posters
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!--<section class="bg-transparent">-->
+<!--  &lt;!&ndash; Wrapper (no background color) &ndash;&gt;-->
+<!--  <div class="flex items-center justify-center px-4 sm:px-6 md:px-8">-->
+
+<!--    &lt;!&ndash; Card &ndash;&gt;-->
+<!--    <div-->
+<!--      class="w-full max-w-6xl rounded-2xl-->
+<!--             bg-gradient-to-r from-[#1a1a1a] to-[#222222]-->
+<!--             border border-white/10-->
+<!--             px-4 sm:px-6 md:px-8 py-4 sm:py-5-->
+<!--             flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">-->
+
+<!--      &lt;!&ndash; Left &ndash;&gt;-->
+<!--      <div class="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">-->
+<!--        &lt;!&ndash; Icon &ndash;&gt;-->
+<!--        <div-->
+<!--          class="w-9 h-9 rounded-full-->
+<!--                 bg-yellow-400/90-->
+<!--                 flex items-center justify-center-->
+<!--                 text-black font-semibold text-lg">-->
+<!--          😊-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Text &ndash;&gt;-->
+<!--        <div class="text-center sm:text-left">-->
+<!--          <h3 class="text-white font-semibold text-base sm:text-lg">-->
+<!--            I am with you in every step-->
+<!--          </h3>-->
+<!--          <p class="text-white/60 text-sm sm:text-base">-->
+<!--            alongside you at each step for seamless experience-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Right &ndash;&gt;-->
+<!--      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mt-3 sm:mt-0 w-full sm:w-auto">-->
+<!--        <button-->
+<!--          class="px-5 py-2 rounded-full-->
+<!--                 bg-white/10 text-white text-sm-->
+<!--                 border border-white/20-->
+<!--                 hover:bg-white/20 transition w-full sm:w-auto">-->
+<!--          See All Projects-->
+<!--        </button>-->
+
+<!--        <button-->
+<!--          class="px-5 py-2 rounded-full-->
+<!--                 bg-white/30 text-black text-sm font-medium-->
+<!--                 hover:bg-white/40 transition w-full sm:w-auto">-->
+<!--          Contact Now-->
+<!--        </button>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+
+
+<section class="py-24 bg-neutral-950 text-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+
+        <div class="sticky top-0 z-50 bg-neutral-950 py-4">
+            <div class="mb-14">
+            <h2 class="text-5xl font-bold mb-3 text-center">Works</h2>
+  <p class="text-neutral-400 max-w-lg mx-auto text-center">
+    A curated selection of visual design projects.
+  </p>
+</div>
+
+<!-- Categories -->
+<div class=" flex flex-wrap justify-center gap-6 mb-14 text-sm font-medium">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="logo">Logo</button>
+  <button class="filter-btn" data-filter="poster">Posters</button>
+  <button class="filter-btn" data-filter="digital">Digital</button>
+  <button class="filter-btn" data-filter="social">Social</button>
+</div>
+        </div>
+
+
+
+
+   <!-- Grid -->
+<div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px]">
+<!-- BRANDING -->
+<div class="work-item logo lg:row-span-2 group cursor-pointer"
+     data-images="assets/img/mfurbm.jpeg, assets/img/mfurb.jpeg, assets/img/gl.jpeg, assets/img/evs.jpeg,">
+  <div class="work-card">
+    <img src="assets/img/mfurbm.jpeg" alt="Brand Identity">
+    <div class="overlay">
+      <h3 class="text-lg font-semibold">Mfurb</h3>
+      <p class="text-sm opacity-80">Logo </p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- POSTER -->
+  <div class="work-item logo lg:col-span-2 group cursor-pointer"
+    data-images="
+    assets/img/gl.jpeg,,
+   assets/img/gl.jpeg,
+    ">
+    <div class="work-card">
+      <img src="assets/img/gl.jpeg">
+      <div class="overlay">
+        <h3>GL Migration</h3>
+        <p>Print Campaign</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIGITAL -->
+  <div class="work-item digital group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/72/f6/3d/72f63d3256d65360be60df050db92c02.jpg,
+    https://i.pinimg.com/736x/ea/5c/3b/ea5c3b509b2a799bcf19fa56a3b2d60f.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/72/f6/3d/72f63d3256d65360be60df050db92c02.jpg">
+      <div class="overlay">
+        <h3>UI Design</h3>
+        <p>Web Interface</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="work-item social lg:row-span-2 group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/4a/5f/43/4a5f43e1b14fdfcba21b2f61b6302fd6.jpg,
+    https://i.pinimg.com/736x/f8/1a/e3/f81ae30e40bd629e1664d4877ae1c631.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/4a/5f/43/4a5f43e1b14fdfcba21b2f61b6302fd6.jpg">
+      <div class="overlay">
+        <h3>Social Media</h3>
+        <p>Instagram Ads</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTOGRAPHY -->
+  <div class="work-item photography group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/aa/aa/aa/aaa.jpg,
+    https://i.pinimg.com/736x/bb/bb/bb/bbb.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/aa/aa/aa/aaa.jpg">
+      <div class="overlay">
+        <h3>Photography</h3>
+        <p>Editorial & Lifestyle</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ILLUSTRATION -->
+  <div class="work-item illustration group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/cc/cc/cc/ccc.jpg,
+    https://i.pinimg.com/736x/dd/dd/dd/ddd.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/cc/cc/cc/ccc.jpg">
+      <div class="overlay">
+        <h3>Illustration</h3>
+        <p>Artwork & Sketches</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PACKAGING -->
+  <div class="work-item packaging group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/ee/ee/ee/eee.jpg,
+    https://i.pinimg.com/736x/ff/ff/ff/fff.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/ee/ee/ee/eee.jpg">
+      <div class="overlay">
+        <h3>Packaging</h3>
+        <p>Product & Branding</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANIMATION -->
+  <div class="work-item animation group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/11/11/11/111.jpg,
+    https://i.pinimg.com/736x/22/22/22/222.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/11/11/11/111.jpg">
+      <div class="overlay">
+        <h3>Animation</h3>
+        <p>Motion Graphics</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="work-item video lg:col-span-2 group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/33/33/33/333.jpg,
+    https://i.pinimg.com/736x/44/44/44/444.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/33/33/33/333.jpg">
+      <div class="overlay">
+        <h3>Video</h3>
+        <p>Campaign & Ads</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP DESIGN -->
+  <div class="work-item app group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/55/55/55/555.jpg,
+    https://i.pinimg.com/736x/66/66/66/666.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/55/55/55/555.jpg">
+      <div class="overlay">
+        <h3>App Design</h3>
+        <p>Mobile Interface</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEB DESIGN -->
+  <div class="work-item web group cursor-pointer"
+    data-images="
+    https://i.pinimg.com/736x/77/77/77/777.jpg,
+    https://i.pinimg.com/736x/88/88/88/888.jpg
+    ">
+    <div class="work-card">
+      <img src="https://i.pinimg.com/736x/77/77/77/777.jpg">
+      <div class="overlay">
+        <h3>Web Design</h3>
+        <p>UI/UX & Layouts</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div
+  id="workModal"
+  class="fixed inset-0 z-50 bg-black/80 hidden mt-12 flex items-start justify-center px-4"
+>
+
+
+<div
+  class="relative
+         inline-block
+         max-w-[90vw]
+         max-h-[80vh]
+         mx-auto
+         mt-24
+         px-6
+         py-6
+         animate-modal"
+>
+
+
+
+    <button onclick="closeModal()"
+      class="absolute -top-12 right-0 mt-12 text-white text-4xl hover:opacity-70">
+      &times;
+    </button>
+
+    <div class="rounded-2xl overflow-hidden mb-6">
+      <img
+  id="modalMainImage"
+  class="max-w-full max-h-[55vh] object-contain rounded-xl mx-auto"
+/>
+
+
+
+    </div>
+
+    <div class="mt-4 px-3 py-3 bg-white/5 rounded-xl">
+  <div id="modalSlider" class="flex gap-4 overflow-x-auto scrollbar-hide"></div>
+</div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* FILTER */
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".work-item");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.filter;
+
+      items.forEach(item => {
+        item.classList.add("opacity-0", "scale-95");
+        setTimeout(() => {
+          if (filter === "all" || item.classList.contains(filter)) {
+            item.style.display = "block";
+            item.classList.remove("opacity-0", "scale-95");
+          } else {
+            item.style.display = "none";
+          }
+        }, 200);
+      });
+    });
+  });
+
+  /* MODAL + SLIDER */
+  const modal = document.getElementById("workModal");
+  const modalImage = document.getElementById("modalMainImage");
+  const slider = document.getElementById("modalSlider");
+
+  items.forEach(work => {
+    work.addEventListener("click", () => {
+
+      const images = work.dataset.images
+        .split(",")
+        .map(img => img.trim());
+
+      modalImage.src = images[0];
+      slider.innerHTML = "";
+
+      images.forEach(img => {
+        const thumb = document.createElement("img");
+        thumb.src = img;
+       thumb.className =
+  "h-14 rounded-md cursor-pointer opacity-60 hover:opacity-100 transition bg-black/20";
+
+
+        thumb.onclick = () => {
+          modalImage.src = img;
+          slider.querySelectorAll("img").forEach(t => t.classList.remove("ring-2"));
+          thumb.classList.add("ring-2", "ring-white");
+        };
+        slider.appendChild(thumb);
+      });
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    });
+  });
+
+  window.closeModal = function () {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  };
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeModal();
+  });
+
+});
+</script>
+
+<!-- STYLES -->
+<style>
+.work-card {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+.group:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.group:hover .overlay {
+  opacity: 1;
+}
+.filter-btn {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+.animate-modal {
+  animation: scaleFade 0.4s ease;
+}
+@keyframes scaleFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
+
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
+</script>
+
+
+</body>
+</html>
