@@ -105,9 +105,9 @@
       </p>
 
       <div class="mt-8 flex gap-4">
-        <button class="px-6 py-3 rounded-full bg-white text-black font-medium">
-          Contact Now
-        </button>
+        <button id="contactBtn1" class="px-6 py-3 rounded-full bg-white text-black font-medium">
+    Contact Now
+  </button>
 
         <button
           class="px-6 py-3 rounded-full border border-white/20
@@ -219,11 +219,11 @@
         </div>
 
         <!-- CTA BUTTON -->
-        <button class="mt-6 w-full px-4 py-3 rounded-full text-white font-medium
+        <button id="contactBtn2" class="mt-6 w-full max-w-xs px-4 py-3 rounded-full text-white font-medium
                      bg-gradient-to-r from-[#111111] via-[#1a1a1a] to-[#222222]
                      hover:brightness-110 transition">
-          Connect with me
-        </button>
+    Connect with me
+  </button>
 
       </div>
 
@@ -329,7 +329,7 @@
 
 
 
-<section class="py-24 bg-neutral-950 text-white">
+<section class="py-12 bg-neutral-950 text-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
@@ -522,9 +522,69 @@
   </div>
 
 
+
 </div>
 
   </div>
+
+
+<div class="mt-10 px-6 sm:px-12 flex justify-center sm:justify-end">
+  <a
+    href="#"
+    class="group relative inline-flex items-center gap-3
+           rounded-full px-6 py-3
+           border border-white/20
+           text-sm font-medium tracking-wide
+           text-white/80
+           overflow-hidden
+           transition-all duration-300 ease-out
+           hover:border-white/40
+           hover:text-white
+           hover:-translate-y-0.5
+           hover:shadow-[0_0_30px_rgba(255,255,255,0.08)]
+           active:scale-95">
+
+    <!-- glow sweep -->
+    <span
+      class="pointer-events-none absolute inset-0
+             translate-x-[-120%]
+             bg-gradient-to-r from-transparent via-white/15 to-transparent
+             transition-transform duration-700 ease-out
+             group-hover:translate-x-[120%]">
+    </span>
+
+    <!-- text -->
+    <span
+      class="relative z-10
+             transition-all duration-300
+             group-hover:tracking-wider">
+      See More
+    </span>
+
+    <!-- arrow -->
+    <span
+      class="relative z-10 inline-flex h-8 w-8 items-center justify-center
+             transition-all duration-300 ease-out
+             group-hover:translate-x-2
+             group-hover:-rotate-12">
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 256 256"
+        class="transition-colors duration-300
+               fill-white/60
+               group-hover:fill-white">
+        <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
+      </svg>
+
+    </span>
+  </a>
+</div>
+
+
+
 </section>
 
 <!-- MODAL -->
@@ -694,6 +754,417 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+</style>
+
+
+<section class="relative bg-[#0a0a0a] py-32 overflow-visible">
+
+  <!-- soft background glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.06),transparent_60%)]"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 text-center">
+
+    <!-- badge -->
+    <div class="inline-flex items-center gap-2 px-4 py-2
+                rounded-full border border-white/15
+                text-sm text-white/70
+                bg-white/5 backdrop-blur-sm mb-6">
+      <span class="h-2 w-2 rounded-full bg-white/60"></span>
+      Why choose me
+    </div>
+
+    <!-- heading -->
+    <h2 class="text-4xl sm:text-5xl font-semibold text-white mb-4">
+      Why me as <span class="text-white/50">Design Partner</span>
+    </h2>
+
+    <!-- subtitle -->
+    <p class="max-w-xl mx-auto text-white/60 text-sm sm:text-base">
+      Why partner with me for the design excellence
+    </p>
+
+    <!-- ================= STACKING AREA ================= -->
+  <div class="relative mt-20 space-y-20">
+
+  <!-- CARD 1 -->
+  <div class="sticky top-24 sm:top-28 z-10
+              rounded-3xl border border-white/10
+              bg-white/[0.02] backdrop-blur-xl
+              shadow-[0_0_80px_rgba(255,255,255,0.05)]">
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/10 text-white">✓</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Skilled Professional
+        </h3>
+
+        <p class="text-white/60 text-sm leading-relaxed">
+          Gain access to top-tier talent with years of experience,
+          ensuring flawless execution.
+        </p>
+      </div>
+
+      <div class="hidden md:block absolute inset-y-10 left-1/2 w-px bg-white/10"></div>
+
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/5 text-white/40">✕</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Amateur Designer
+        </h3>
+
+        <p class="text-white/50 text-sm leading-relaxed">
+          Lack of experience may result in design inconsistencies
+          and overlooked details.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="sticky top-36 sm:top-36 z-20
+              rounded-3xl border border-white/10
+              bg-white/[0.02] backdrop-blur-xl
+              shadow-[0_0_80px_rgba(255,255,255,0.05)]">
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/10 text-white">✓</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Strategic Thinking
+        </h3>
+
+        <p class="text-white/60 text-sm leading-relaxed">
+          Designs driven by clarity, usability, and long-term
+          business goals.
+        </p>
+      </div>
+
+      <div class="hidden md:block absolute inset-y-10 left-1/2 w-px bg-white/10"></div>
+
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/5 text-white/40">✕</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Random Execution
+        </h3>
+
+        <p class="text-white/50 text-sm leading-relaxed">
+          Design decisions without strategy often lead to
+          inconsistency and poor user experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+      <div class="sticky top-36 sm:top-36 z-20
+              rounded-3xl border border-white/10
+              bg-white/[0.02] backdrop-blur-xl
+              shadow-[0_0_80px_rgba(255,255,255,0.05)]">
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/10 text-white">✓</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Strategic Thinking
+        </h3>
+
+        <p class="text-white/60 text-sm leading-relaxed">
+          Designs driven by clarity, usability, and long-term
+          business goals.
+        </p>
+      </div>
+
+      <div class="hidden md:block absolute inset-y-10 left-1/2 w-px bg-white/10"></div>
+
+      <div class="p-8 sm:p-10 text-left">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white/5 text-white/40">✕</div>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">
+          Random Execution
+        </h3>
+
+        <p class="text-white/50 text-sm leading-relaxed">
+          Design decisions without strategy often lead to
+          inconsistency and poor user experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+      <!-- ================= END STACKING AREA ================= -->
+
+  </div>
+</section>
+
+<section class="relative bg-[#0a0a0a] py-28 overflow-hidden">
+
+  <!-- soft outer glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.06),transparent_60%)]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- ================= LEFT CONTENT ================= -->
+      <div>
+
+        <!-- badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 mb-6
+                    rounded-full border border-white/15
+                    text-sm text-white/70
+                    bg-white/5 backdrop-blur-sm">
+          <span class="h-2 w-2 rounded-full bg-white/60"></span>
+          Let's Connect
+        </div>
+
+        <!-- heading -->
+        <h2 class="text-4xl sm:text-5xl xl:text-6xl font-semibold text-white leading-tight mb-8">
+          Let’s Grow <span class="text-white/50">Together</span>
+        </h2>
+
+        <!-- divider -->
+        <div class="h-px w-full bg-white/10 mb-8"></div>
+
+        <!-- service -->
+        <div class="mb-6">
+          <div class="flex items-center gap-3 mb-2">
+            <h3 class="text-lg font-semibold text-white">Web Design</h3>
+            <span class="px-3 py-1 rounded-full text-xs text-white/70 bg-white/10">
+              Starting from $1,999
+            </span>
+          </div>
+          <p class="text-white/60 text-sm max-w-md">
+            Showcasing sleek, high-performance designs tailored for impact
+          </p>
+        </div>
+
+        <!-- service -->
+        <div class="mb-10">
+          <div class="flex items-center gap-3 mb-2">
+            <h3 class="text-lg font-semibold text-white">Framer Development</h3>
+            <span class="px-3 py-1 rounded-full text-xs text-white/70 bg-white/10">
+              Starting from $4,999
+            </span>
+          </div>
+          <p class="text-white/60 text-sm max-w-md">
+            Building visually stunning, user-focused websites that elevate brands.
+          </p>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex flex-wrap gap-4">
+
+          <a
+            href="#"
+            class="inline-flex items-center justify-center
+                   rounded-full px-6 py-3
+                   border border-white/20
+                   text-sm font-medium text-white/80
+                   transition-all duration-300
+                   hover:border-white/40
+                   hover:text-white">
+            See All Projects
+          </a>
+
+           <a href="#" id="contactBtn3"
+     class="inline-flex items-center justify-center
+            rounded-full px-6 py-3
+            bg-white text-black
+            text-sm font-medium
+            transition-all duration-300
+            hover:scale-[1.03]
+            active:scale-95">
+    Contact Now
+  </a>
+
+        </div>
+
+      </div>
+
+      <!-- ================= RIGHT PREVIEW ================= -->
+      <div class="relative">
+
+        <!-- glow -->
+        <div class="absolute -inset-6 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_70%)] blur-2xl"></div>
+
+        <!-- preview frame -->
+        <div class="relative rounded-3xl border border-white/10
+                    bg-white/[0.03] backdrop-blur-xl
+
+                    overflow-hidden p-5 ">
+
+
+
+          <!-- preview image -->
+<img
+  src="https://i.pinimg.com/736x/d7/b9/48/d7b948ff970f7d92ee265072da06fd07.jpg"
+  alt="Project Preview"
+  class="w-full object-cover opacity-90 rounded-[10px]"
+/>
+
+
+<!--          &lt;!&ndash; fade label &ndash;&gt;-->
+<!--          <div class="absolute bottom-4 right-4 px-3 py-1-->
+<!--                      rounded-full bg-black/60-->
+<!--                      text-xs text-white/70 backdrop-blur">-->
+<!--            Fade-->
+<!--          </div>-->
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================== MODAL ================== -->
+<div id="contactModal"
+     class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
+
+  <div class="bg-[#0a0a0a] rounded-3xl max-w-lg w-full p-8 relative shadow-xl animate-fadeIn">
+
+    <!-- Close button -->
+    <button id="closeModal"
+            class="absolute top-4 right-4 text-white text-2xl font-bold">&times;</button>
+
+    <h3 class="text-2xl font-semibold text-white mb-6 text-center">
+      Get in Touch
+    </h3>
+
+    <!-- ✅ FORM (FORMSPREE) -->
+    <form id="contactForm"
+          action="https://formspree.io/f/mjgbkzqz"
+          method="POST">
+
+      <!-- Name -->
+      <div class="mb-4">
+        <label class="text-white/70 text-sm">Name</label>
+        <input type="text" name="name" required
+               class="mt-1 w-full px-4 py-2 rounded-lg bg-white/5 text-white border border-white/20 outline-none">
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label class="text-white/70 text-sm">Email</label>
+        <input type="email" name="email" required
+               class="mt-1 w-full px-4 py-2 rounded-lg bg-white/5 text-white border border-white/20 outline-none">
+      </div>
+
+      <!-- Phone -->
+      <div class="mb-4">
+        <label class="text-white/70 text-sm">Phone</label>
+        <input type="text" name="phone" required
+               class="mt-1 w-full px-4 py-2 rounded-lg bg-white/5 text-white border border-white/20 outline-none">
+      </div>
+
+      <!-- Message -->
+      <div class="mb-6">
+        <label class="text-white/70 text-sm">Message</label>
+        <textarea name="message" required
+                  class="mt-1 w-full px-4 py-2 h-28 rounded-lg bg-white/5 text-white border border-white/20 outline-none resize-none"></textarea>
+      </div>
+
+      <!-- Anti-spam -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- Submit -->
+      <button type="submit"
+              class="w-full px-6 py-3 rounded-full bg-white text-black font-medium hover:scale-[1.03] transition">
+        Send Message
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('contactModal');
+  const closeModal = document.getElementById('closeModal');
+  const form = document.getElementById('contactForm');
+
+  const buttons = ['contactBtn1','contactBtn2','contactBtn3'];
+
+  buttons.forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+    }
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  });
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  });
+
+  // ✅ Client validation + submit
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{7,15}$/;
+
+    if (!emailRegex.test(form.email.value)) {
+      alert("Invalid email");
+      return;
+    }
+
+    if (!phoneRegex.test(form.phone.value)) {
+      alert("Invalid phone number");
+      return;
+    }
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      alert("✅ Message sent successfully!");
+      form.reset();
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    } else {
+      alert("❌ Something went wrong. Try again.");
+    }
+  });
+</script>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
 }
 </style>
 
